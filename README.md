@@ -82,6 +82,18 @@ wget https://<appname>.apps-127-0-0-1.nip.io
 cf logs <appname>
 ```
 
+## Service binden
+
+```sh
+cf bs <appname> <servicename>
+```
+
+Zugriff auf vom Service bereitgestellte Daten über die `VCAP_SERVICES` Umgebungsvariable.
+
+```sh
+cf env <appname>
+```
+
 ## Sonstige Commands
 
 - `cf scale`
