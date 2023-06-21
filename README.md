@@ -38,7 +38,11 @@ cf target -o tutorial -s dev
 ```sh
 cf apps
 ```
+## Services im ausgewälten Space anzeigen
 
+```sh
+cf services
+```
 
 ## Demp-App clonen
 
@@ -52,6 +56,13 @@ git https://github.com/cloudfoundry-tutorials/korifi-sample-app
 
 - `manifest.mf` bearbeiten
 - App Namen anpassen
+- Service `credentials` binden
+
+```yaml
+---
+  services:
+   - credentials
+```
 
 ## App pushen
 
